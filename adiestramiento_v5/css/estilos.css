@@ -1,0 +1,119 @@
+html {
+    font-size: 10px;
+    overflow: scroll;
+    display: inline-flex;
+    /*margin-right: auto;*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    /*grid-template-columns: auto;
+    grid-template-areas: 'logo nav nav nav nav nav' 'portada portada portada portada portada portada' 'contenido contenido contenido contenido contenido contenido' 'footer footer footer footer footer footer';
+    border: 0.1rem solid #ffa09e;*/
+}
+
+.logo {
+    /*grid-area: logo;*/
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav {
+    /*grid-area: nav;*/
+    grid-column: 2/7;
+    font-family: "Glory", sans-serif;
+    font-size: 3rem;
+    color: #E66967;
+    margin-top: 2.5rem;
+}
+
+.portada {
+    /*grid-area: portada;
+    position: relative;*/
+    grid-column: 1/7;
+    height: 40rem;
+}
+
+.portada img {
+    height: 100%;
+    width: 100%;
+}
+
+.contenido {
+    /*grid-area: contenido;*/
+    grid-column: 1/7;
+}
+
+h1>span {
+    /*titulo adiestramiento canino insertado en imágen*/
+    position: relative;
+    font-family: 'Glory', sans-serif;
+    background-color: #ffa09ea6;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    top: -6rem;
+}
+
+p {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(10, 0, 0);
+    font-size: 1rem;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: rgb(62, 9, 253);
+}
+
+.contacto {
+    /*display: inline-block;*/
+    font-size: 2rem;
+    margin-left: 40%;
+}
+
+.ig {
+    font-size: 2rem;
+    margin: auto 5rem;
+}
+
+.linkedin {
+    /*display: inline-block;*/
+    font-size: 3rem;
+    margin-left: 50%;
+}
+
+.nav:hover {
+    background-color: #be6968b9;
+    color: rgb(251, 252, 249);
+}
+
+.footer {
+    /*display: footer;*/
+    grid-column: 1/7;
+    background-color: #ffa09e;
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+
+/*
+@media (min-width: 480px) {
+    .cabecera {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+}*/

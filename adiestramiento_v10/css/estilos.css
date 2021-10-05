@@ -1,0 +1,262 @@
+/*-------------------------------------------MAQUETADO--------------------------------------------*/
+
+.contenedor {
+    /* Contenedor GRID*/
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+
+.logo {
+    position: fixed;
+    grid-column: 1/1;
+    grid-row: 1/2;
+    margin-top: -3rem;
+    margin-left: -3rem;
+    /* margin-left: 3rem;
+    margin-bottom: 2rem; */
+}
+
+.nav {
+    grid-column: 2/7;
+    grid-row: 1/2;
+    font-family: "Glory", sans-serif;
+    font-size: 2rem;
+    /* color: #e66967; */
+    margin-left: 12.5rem;
+}
+
+.contenedorNAV {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    padding: 4rem;
+    z-index: 50;
+}
+
+.portada {
+    /* IMAGEN */
+    grid-column: 1/7;
+    grid-row: 2/3;
+    height: 40rem;
+    margin-top: 10rem;
+}
+
+.item1 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.item2 {
+    grid-column: 4/7;
+    grid-row: 3/4;
+    /* vertical-align: middle; */
+}
+
+#volver {
+    grid-area: volver;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 0rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.footer {
+    grid-column: 1/7;
+    grid-row: 5/6;
+    background-color: #82815E;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/*-----------------------------CARACTERÍSTICAS------------------------------------------*/
+
+.opcion {
+    padding: 2rem;
+    /*si corro esto, me corre la imagen*/
+    position: relative;
+    align-content: center;
+    margin-right: 10.8rem;
+    border-radius: 2rem;
+    color: #34586e;
+}
+
+a:link,
+a:visited {
+    columns: rgb(2, 0, 0);
+}
+
+a:hover {
+    color: white;
+}
+
+.portada>img {
+    height: 100%;
+    width: 100%;
+}
+
+.bordes {
+    background-color: #ff9ea07c;
+    border-radius: 2rem;
+    border: 0.5rem solid #34586e;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+h1 {
+    /*titulo adiestramiento canino insertado en imágen*/
+    position: relative;
+    font-family: 'Glory', sans-serif;
+    background-color: #ffa09ea6;
+    background-color: #ff9ea086;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    top: -7.7rem;
+}
+
+h2 {
+    background-color: #5E5E4D;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+ul,
+{
+    font-size: 2rem;
+}
+
+.contacto {
+    /*display: inline-block;*/
+    font-size: 2rem;
+    /* margin-left: 40%; */
+}
+
+.ig {
+    font-size: 2rem;
+    margin: auto 1rem;
+}
+
+.linkedin {
+    /*display: inline-block;*/
+    font-size: 3rem;
+    /*  margin-left: 50%; */
+}
+
+.opcion:hover {
+    background-color: #34586e;
+    color: rgb(251, 252, 249);
+}
+
+
+/*---------------------------------------ADIESTRAMIENTO------------------------------------------*/
+
+.tituloSeccion {
+    font-size: 2rem;
+    grid-column: 1/7;
+    grid-row: 1/2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.portadaGeneral {
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+
+.adiestramientoExplicacion {
+    /* grid-column: 1/6;
+    grid-row: 2/3; 
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;*/
+    font-size: 2rem;
+    text-align: justify;
+    padding: 3rem;
+}
+
+
+/*--------------------------------------- SECCION CONTACTO------------------------------------------*/
+
+
+/* .contenedor_contacto {
+    /* Contenedor GRID
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'titulo titulo' 'titulo1 titulo2' 'form maps''volver volver';
+    gap: 2rem;
+}
+ */
+
+
+/* .titulo {
+    grid-area: titulo;
+    margin-top: 10rem;
+    font-family: 'Glory', sans-serif;
+}
+ */
+
+.titulo1 {
+    grid-template-columns: 1/4;
+    grid-template-rows: 2/3;
+}
+
+.titulo2 {
+    grid-template-columns: 4/7;
+    grid-template-rows: 2/3;
+}
+
+.formulario {
+    /*content: 'Formulario de contacto' attr(data-socio);*/
+    grid-template-columns: 1/4;
+    grid-template-rows: 3/3;
+    padding: 1rem 4rem;
+    margin-right: 20rem;
+    border: 0.2rem #ffa09e solid;
+    box-shadow: 1rem 1.5rem 2rem 1rem #524f4fbc;
+    font-size: 1.5rem;
+}
+
+.maps {
+    grid-template-columns: 4/7;
+    grid-template-rows: 4/4;
+}
+
+
+/*-------------------------------------------------GUARDERÍA-------------------------------------*/
+
+
+/*
+@media (min-width: 480px) {
+    .cabecera {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+}*/
+
+@media screen and (max-width: 768px) {
+    .nav {
+        /*         float: right;
+ */
+        width: 100%;
+        grid-row: 1/2;
+        margin-left: 7rem;
+        flex-direction: column;
+    }
+    /*  .portada {
+        flex: 50%;
+        max-width: 100%;
+    } */
+}

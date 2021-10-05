@@ -1,0 +1,129 @@
+html {
+    /*box-sizing: border-box;*/
+    font-size: 10px;
+    overflow: auto;
+    display: inline-flex;
+    /*margin-right: auto;*/
+}
+
+body {
+    display: inline-flex;
+}
+
+.imagenPortada {
+    position: fixed;
+    height: 80%;
+    z-index: -10;
+    width: 90%;
+    /*definido así para que ocupe el total en ancho*/
+}
+
+h1 span {
+    /*titulo adiestramiento canino insertado en imágen*/
+    font-family: 'Glory', sans-serif;
+    background-color: #ffa09ea6;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    position: absolute;
+    top: 30.3rem;
+    width: 98.1%;
+    left: 0rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: left;
+    align-items: center;
+    height: 2rem;*/
+    border: 0.1rem dashed black;
+}
+
+.flex-container>section {
+    width: 6rem;
+    height: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "Glory", sans-serif;
+    font-size: 1.2rem;
+    color: #e712a0;
+    z-index: 5;
+}
+
+
+/*
+nav {
+    color: red;
+    position: relative;
+    top: 15rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    z-index: 10rem;
+}*/
+
+.container {
+    position: relative;
+    background-color: #ffffff;
+    top: 37.2rem;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(10, 0, 0);
+    font-size: 1rem;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: rgb(253, 253, 9);
+}
+
+#contacto {
+    z-index: 10;
+    margin: 5px;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    display: inline-block;
+}
+
+nav:hover {
+    background-color: #be6968b9;
+    color: rgb(251, 252, 249);
+}
+
+
+/*NO FUNCIONA*/
+
+footer {
+    position: fixed;
+    background-color: #ffa09e;
+    size: 3rem;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*
+.whatsapp {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 0.5rem;
+}
+*/

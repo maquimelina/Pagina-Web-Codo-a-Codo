@@ -1,0 +1,28 @@
+/*ESTILOS GENERALES, VOLVER Y WHATSAP*/
+
+.whatsapp {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 0.5rem;
+}
+
+#volver {
+    color: crimson;
+}
+
+h2 {
+    font-family: 'Glory', sans-serif;
+    background-color: #FFA09E;
+}

@@ -1,0 +1,98 @@
+        html {
+            /*box-sizing: border-box;*/
+            font-size: 10px;
+            overflow: scroll;
+            display: inline-flex;
+            /*margin-right: auto;*/
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .contenedor {
+            display: grid;
+            /*max-width: 1200px;
+            width: 95%;
+        margin: 0 auto;*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 'logo nav nav' 'portada portada portada' 'contenido contenido contenido' 'footer footer footer';
+            border: 0.1rem solid #ffa09e;
+        }
+        
+        .logo {
+            grid-area: logo;
+            background-color: rgb(245, 143, 214);
+        }
+        
+        .nav {
+            grid-area: nav;
+            background-color: #ffa09ea6;
+            font-family: "Glory", sans-serif;
+            font-size: 3rem;
+            color: #fffdfe;
+        }
+        
+        .portada img {
+            grid-area: portada;
+            /*position: relative;
+        height: 100%;
+        width: 100%;
+        /*definido así para que ocupe el total en ancho*/
+        }
+        
+        .contenido {
+            grid-area: contenido;
+        }
+        
+        h1>span {
+            /*titulo adiestramiento canino insertado en imágen*/
+            position: relative;
+            font-family: 'Glory', sans-serif;
+            background-color: #ffa09ea6;
+            padding: 1rem;
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            top: -6rem;
+        }
+        
+        p {
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(10, 0, 0);
+            font-size: 1rem;
+        }
+        
+        ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: rgb(253, 253, 9);
+        }
+        
+        #contacto {
+            display: inline-block;
+            margin: 10px;
+            padding: 1rem;
+        }
+        
+        #nav:hover {
+            background-color: #be6968b9;
+            color: rgb(251, 252, 249);
+        }
+        /*NO FUNCIONA*/
+        
+        .footer {
+            display: grid;
+            background-color: #ffa09e;
+            size: 3rem;
+            bottom: 0;
+            width: 100%;
+        }
+        /*
+@media (min-width: 480px) {
+    #cabecera {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }*/

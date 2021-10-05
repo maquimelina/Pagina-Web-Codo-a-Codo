@@ -1,0 +1,56 @@
+/*ESTILOS GENERALES, VOLVER Y WHATSAP*/
+
+html {
+    font-size: 10px;
+    overflow: scroll;
+    display: inline-flex;
+    font-family: serif, Arial, sans-serif;
+    /* width: 100%;
+    height: 100%; */
+    /*margin-right: auto;*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.whatsapp {
+    position: fixed;
+    width: 29rem;
+    height: 5rem;
+    bottom: 4rem;
+    right: 2rem;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 4rem;
+    border: 0.3rem solid #000502;
+    text-align: start;
+    font-size: 3rem;
+    z-index: 100;
+    margin-bottom: -2rem;
+}
+
+.whatsapp-icon {
+    margin: 0.7rem 1rem 2rem 1.5rem;
+}
+
+.consultaWsap {
+    font-size: 2rem;
+    z-index: 100;
+    color: #FFF;
+}
+
+h2 {
+    font-family: 'Glory', sans-serif;
+}
+
+.resaltar {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+}
